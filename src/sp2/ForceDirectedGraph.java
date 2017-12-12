@@ -1,7 +1,7 @@
 /**
  * 
  */
-package sp1;
+package sp2;
 
 import java.awt.Dimension;
 import java.awt.Point;
@@ -70,6 +70,12 @@ public class ForceDirectedGraph {
 	}
 	
 	
+	public void displace (String vertex) {
+		
+		
+		
+	}
+	
 	public Graph<String, String> addToGraph(Graph<String, String> graph, 
 										   Map<Integer, ArrayList<Integer>> map) {
 		int count = 0;
@@ -108,16 +114,17 @@ public class ForceDirectedGraph {
 			layout.setLocation(vertices, new Point(rand.nextInt(400), rand.nextInt(400)));
 		}
 		
-//		for (int i = 1; i <= val; i++) {
-//			double temperature = 1/i;
-//			
-//			for (String vertices : newGraph.getVertices()) {
-//				
+		for (int i = 1; i <= val; i++) {
+			double temperature = 1/i;
+			
+			for (String vertices : newGraph.getVertices()) {
+				
 //				vertices.
-//				
-//			}
-//			
-//		}
+				
+			}
+			
+		}
+		
 		
 		return layout;
 		
